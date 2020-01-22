@@ -1,6 +1,5 @@
 <template>
-  <div class = "home">我是主页</div>
-
+  <div class="home">我是主页</div>
 </template>
 
 <script>
