@@ -1,8 +1,11 @@
 <template>
-  <!-- 一级路由容器 -->
-  <router-vies />
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
-<style lang="less">
-
-</style>
+<script>
+export default {
+  name: 'App'
+}
+</script>

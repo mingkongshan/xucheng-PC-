@@ -1,23 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Home from '../views/home'
 import Login from '../views/login'
-
 Vue.use(VueRouter)
-
 const routes = [
   {
     // 强制跳转
     path: '/',
-    redirect: '/home' // 使其改变方向,重新寄送
+    redirect: '/home'
   },
   {
     // 主页
-    path: '/home', // 路径
+    path: '/home',
     name: 'home',
     component: Home
   }, {
-    // 登首页
+    // 登录页
     path: '/login',
     component: Login
   }
@@ -30,9 +29,7 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
 ]
-
 const router = new VueRouter({
   routes
 })
-
 export default router
